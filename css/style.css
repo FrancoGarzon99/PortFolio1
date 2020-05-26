@@ -1,0 +1,242 @@
+/*transicion entre secciones*/
+html{
+  scroll-behavior: smooth;
+}
+/*cuerpo del sitio web*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway',sans-serif,;
+    overflow-x: hidden;/*Necesario para poder esconder el menu de costado*/
+}
+/*Menu de navegacion*/
+header{
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  top: 10px;
+}
+.sidenav{
+  transition: all 0.5s ease;
+}
+.sidenav .user-view{
+  background:#6EBCE5;
+}
+header a{
+  text-decoration: none;
+}
+header a:hover{
+  text-decoration: none;
+}
+
+
+
+/*imagen de de fondo del header*/
+.fondoprin{
+  min-height: 40rem;
+  width: 100%;
+  height: 750px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background:url(../img/fondo2.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  background-position: center inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*columna principal del header*/
+.columprin{
+  padding: 25px 70px;
+}
+/*texto de la columna principal del fondo/header*/
+.columprin .titleprin{
+  font-family: Fjalla One;
+  font-size: 60px;
+  letter-spacing: 3px;
+  line-height: 65px;
+  font-weight: 500;
+  color: white; 
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*seccion bienvenidos */
+.welcome{
+  background-color: #fff;
+  width: 100%;
+  height: 100%; 
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+/*titulo de seccion welcome*/
+.welcome h1{
+  font-size: 20px;
+  font-family: raleway, sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 32px;
+  color: #5d5d5d;
+}
+/*seccion mis habilidades*/
+.ability{
+  background: linear-gradient(#6EBCE5, #7E50FD);
+  clip-path: polygon(100% 10%, 100% 100%, 0 90%, 0 0);
+ 
+  width: 100%;
+  height: auto; 
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+/*titulo de seccion mis habilidades*/
+.title{
+  font-size: 40px;
+  font-family: Fjalla One, sans-serif;
+  font-weight: 500;
+  color:#fff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/*barra de progreso de mis habilidades como developer*/
+.progress{
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 17px;
+  margin-top:50px;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+}
+/*color de barra de progreso*/
+.progress-bar{
+  background-color: #5BC0DE;
+}
+
+/*titulos dentro de la barra de progreso*/
+.press{ 
+  text-align: initial;
+  padding:0px 25px; 
+  color: #1f1f1f;
+}
+/*espacios entre las barras*/
+#elem2{
+  margin-top: 25px;
+}
+/*fondo de la seccion educación*/
+.education{
+  background: #fff;
+  width: 100%;
+  height: auto; 
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+/*titulo de seccion educacion*/
+.title2{
+  font-size: 40px;
+  font-family: Fjalla One, sans-serif;
+  font-weight: 500;
+  color:rgb(0, 0, 0);
+  letter-spacing: 1px;
+  text-align: center;
+}
+.education .education_items .education_list{
+  margin: 30px;
+}
+.education .education_items .education_list .collapsible-header{
+  background-color: #6EC1E4;
+}
+
+/*propiedades de la seccion myjobs (ancho, altura, fondo,colores)*/
+.myjobs{
+  background:linear-gradient(#7E50FD ,#6EBCE5);
+  clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+  width: 100%;
+  height: auto; 
+  padding-top: 150px;
+  padding-bottom: 150px;
+  
+}
+/*estilos de las columnas que contienen las imagenes*/
+.colum_jobs{
+  padding: 45px 70px;
+}
+
+.colum_jobs2{
+  padding: 0px 70px;
+}
+/*estilos y transicion de las imagenes en estado :hover*/
+.jobs_img img{
+  transition: all 0.9s;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.jobs_img img:hover {
+
+  -webkit-transform:scale(0.95);transform:scale(0.95);
+}
+
+
+/*seccion lo que dicen de mi*/
+.aboutme{
+width: 100%;
+height: auto; 
+padding-top: 100px;
+padding-bottom: 100px;
+}
+/*acomodamos la imagen centrada en el contenedor'div'*/
+.about_img{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+.about_img img{
+  display: flex;
+  position: static;
+  padding: 0px 20px;
+}
+/*columna principal */
+.about_col{
+  margin-top: 50px;
+}
+/*columna que contiene los textos e imagenes*/
+.about_colum{
+  margin-top: 50px;
+  border:1px solid #bebebe;
+  border-radius: 10px;
+  transition:all 0.5s ease-in-out;
+}
+.about_col .card{
+  box-shadow: none;
+
+}
+/*sombra cuando pasamos por arriba de la card*/
+.about_col .about_colum:hover{
+  -webkit-box-shadow: 15px 15px 1px 0px rgba(176,176,176,0.3);
+  -moz-box-shadow: 15px 15px 1px 0px rgba(176, 176, 176, 0.3);
+  box-shadow: 15px 15px 1px 0px rgba(176, 176, 176, 0.3);
+ /* box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.07);*/
+}
+
+/*seccion final 'footer'*/
+footer{
+  background :#6EBCE5;
+  width: 100%;
+  height: auto; 
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  }
+footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+footer a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
